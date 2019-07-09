@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "GitHubHexView",
+	"version": "1.0",
+
+	"description": "Adds a hex viewer to binary files on Github.",
+	
+	"permissions": ["*://raw.githubusercontent.com/*"],
+
+	"content_scripts": [
+		{
+			"matches": ["*://github.com/*"],
+			"js": ["githubhexview.js"],
+			"css": ["githubhexview.css"]
+		}
+	]
+}
