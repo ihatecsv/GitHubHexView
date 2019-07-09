@@ -6,7 +6,8 @@ const bufferToHex = function(array){
 		const currentLine = i.toString(16).padStart(8, "0");
 		const currentByte = array[i].toString(16).padStart(2, "0");
 		if(i % lineLength == 0) finalHex += "<span class=\"githubhexview-codenumber\">" + currentLine + ": </span>";
-		finalHex += currentByte + " ";
+		finalHex += currentByte;
+		if((i + 1) % 2 == 0) finalHex += " ";
 		if(i != 0 && (i+1) % lineLength == 0) finalHex += "<br>";
 	}
 	return finalHex;
