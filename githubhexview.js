@@ -29,7 +29,7 @@ const createHexTable = function(array){
 			finalNumbers += "<br>";
 			finalHex += "<br>";
 			finalAscii += "<br>";
-		}else if((i + 1) % 2 == 0) finalHex += " ";
+		}else if((i + 1) % 2 == 0) finalHex += "&nbsp;";
 	}
 	return {
 		numbers: finalNumbers,
