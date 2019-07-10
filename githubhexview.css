@@ -6,10 +6,10 @@
 .githubhexview-code{
 	display: inline-block;
 	text-align: left;
+	margin-left: 4px;
+	margin-right: 4px;
 }
 
-.githubhexview-codenumber{
-	user-select: none;
-	-moz-user-select: none;
+.githubhexview-codecontext{
 	color: rgba(27,31,35,.3);
 }
